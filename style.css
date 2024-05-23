@@ -30,13 +30,12 @@ nav ul li a{
 .button{
   display:inline-block;
   padding: 12px 24px;
-  font-size:18px
+  font-size:18px;
   color:white;
-  background-color:#555
+  background-color:#555;
   border:2px solid black;
   border-radius:20px;
-  transition:background-color 0.3s
-ease;
+  transition:background-color 0.3s ease;
 }
 .button:hover{
   background-color:white;
