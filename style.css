@@ -32,6 +32,7 @@ nav ul li a{
   padding: 10px 20px;
   font-size:18px;
   background-color:#555
+  border:2px solid black;
   boder-radius:5px;
   transition:background-color 0.3s
 ease;
