@@ -29,11 +29,12 @@ nav ul li a{
 }
 .button{
   display:inline-block;
-  padding: 10px 20px;
-  font-size:18px;
+  padding: 12px 24px;
+  font-size:18px
+  color:white;
   background-color:#555
   border:2px solid black;
-  boder-radius:5px;
+  boder-radius:20px;
   transition:background-color 0.3s
 ease;
 }
