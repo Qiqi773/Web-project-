@@ -23,7 +23,7 @@ header{
   width: 100%;
   height:100%;
   object-fit:cover;
-  transform:translate;
+  transform:translate（-50%,-50%);
   z-index:-1;
 }
 .overlay{
