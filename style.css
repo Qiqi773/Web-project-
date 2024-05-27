@@ -17,13 +17,14 @@ header{
   overflow:hidden;
 }
 #video{
-  positiom: absolute;
+  position: absolute;
   top:0;
   left:0;
   width: 100%;
   height:auto;
 }
 header h1{
+  position:absolute;
   margin:0;
   font-size:2em;
 }
