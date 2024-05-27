@@ -4,14 +4,34 @@ body{
   padding:0;
   background-color:#e0f0da;
 }
+/*
 header{
   background-image:url("IMG_5398.jpeg");
   padding: 50px;
   text-align:center;
 }
+*/
+#header-video{
+  position:relative;
+  height:100vh;
+  overflow:hidden;
+}
+#video{
+  positiom: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height:auto;
+}
 header h1{
   margin:0;
   font-size:2em;
+}
+nav{
+  position: absolute;
+  top:20px;
+  left: 20px;
+  z-index:1;
 }
 nav ul{
   list-style:disc inside none;
