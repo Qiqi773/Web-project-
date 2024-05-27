@@ -27,6 +27,7 @@ header h1{
   position:absolute;
   margin:0;
   font-size:2em;
+  z-index:1;
 }
 nav{
   position: absolute;
