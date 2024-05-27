@@ -25,6 +25,8 @@ header{
 }
 header h1{
   position:absolute;
+  top:20px;
+  left:20px;
   margin:0;
   font-size:2em;
   z-index:1;
