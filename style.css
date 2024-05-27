@@ -98,7 +98,7 @@ section{
     font-size:1em;
   }
 }
- @media (max-width:480ps){
+ @media (max-width:480px){
    h1 {
      font-size:1.5em;
    }
