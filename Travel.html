@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+  <title>Travel Map</title>
+  <style>
+    #map{
+      height:500px;
+      width:100%;
+    }
+  </style>
+  <script src="https://maps.googleapis.com/maps/api/js?
+key=AIzaSyDR-cpzu2UtHspSbGrMbBKTpA7gp4SUOvg&callback=initMap"
+async defer></script>
+</head>
+<body>
+  <h1>My Travel Map</h1>
+  <div id="map"></div>
+  <script>
+    function initMap(){
+      var map= new
+  google.maps.Map(document.getElementByIF('map'),{
+    center:{lat:35.8617, lng:104.1954},
+         zoom: 3,
+         gestureHanling:'greedy'
+  });
+  
+  </script>
+</body>
+</html>
