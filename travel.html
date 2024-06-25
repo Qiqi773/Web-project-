@@ -32,6 +32,18 @@
         center: position,
         mapId: "DEMO_MAP_ID",
       });
+      const locations =[
+        {lat:39.9042, lng: 116.4074, title : 'Peking'},
+        {lat:31.2304, lng:121.4737, title:'shanghai'} ];
+      location.forEach(location =>{
+        const marker = new google.maps.Marker({
+          position :{lat: location.lat,lng:location.lng },
+          map=map,
+          title: location.title});
+        marker.addListener('click',() => {
+          infowindow.open(map,marker);
+        });
+      });
 
     
     }
