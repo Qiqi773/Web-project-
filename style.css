@@ -36,6 +36,7 @@ header{
   padding:20px;
 }
 header h1{
+  position: relative;
   margin:0;
   font-size:3em;
   z-index:10;
