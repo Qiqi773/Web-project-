@@ -8,8 +8,7 @@ header{
   background-image:url("IMG_5398.jpeg");
   padding: 50px;
   text-align:center;
-}
-img{
+  background-img:url("IMG_5398.jpeg")
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
