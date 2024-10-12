@@ -9,6 +9,11 @@ header{
   padding: 50px;
   text-align:center;
 }
+img{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /*#video{
   position: absolute;
