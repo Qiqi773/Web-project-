@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travel Map</title>
   <style>
     #map {
-      height: 100vh; /* 使用全屏高度 */
+      height: 100vh;
+      /* 使用全屏高度 */
       width: 100%;
     }
   </style>
   <!-- 引入 Google Maps API -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9E1ef_6R-e6msMNv69QTDPzFQWrvrKRw&callback=initMap" async defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9E1ef_6R-e6msMNv69QTDPzFQWrvrKRw&callback=initMap"
+    async defer></script>
 </head>
+
 <body>
   <h1>My Travel Map</h1>
   <div id="map"></div>
@@ -30,45 +34,45 @@
       map = new Map(document.getElementById("map"), {
         zoom: 4,
         center: position,
-        
+
       });
       const locations = [
         { lat: 39.9042, lng: 116.4074, title: '北京' },
         { lat: 31.2304, lng: 121.4737, title: '上海' },
-        { lat: 39.6086, lng: 109.7813 , title: '鄂尔多斯' },
-        { lat: 40.8426, lng: 111.7492, title:'呼和浩特'},
-        { lat: 32.0603, lng: 118.7969, title: '南京'},
-        { lat: 35.4164, lng: 119.5262, title: '日照'},
-        { lat: 35.1046, lng: 118.3564, titel: '临沂'},
-        { lat: 36.0611, lng: 103.8343, title:'兰州'},
-        { lat: 36.0611, lng: 101.7782, title:'西宁'},
-        { lat: 26.0745, lng: 119.2965, title: '福州'},
-        { lat: 24.4486, lng: 118.0828, title:'鼓浪屿'},
-        { lat: 27.7566, lng: 117.6618, title:'武夷山'},
-        { lat: 22.2710, lng: 113.5767, title:'珠海'},
-        { lat: 37.8706, lng: 112.5489, title:'太原'},
-        { lat: 36.5853, lng: 109.4897, title:'延安'},
-        { lat: 30.7480, lng: 120.4853, title:'乌镇'},
+        { lat: 39.6086, lng: 109.7813, title: '鄂尔多斯' },
+        { lat: 40.8426, lng: 111.7492, title: '呼和浩特' },
+        { lat: 32.0603, lng: 118.7969, title: '南京' },
+        { lat: 35.4164, lng: 119.5262, title: '日照' },
+        { lat: 35.1046, lng: 118.3564, titel: '临沂' },
+        { lat: 36.0611, lng: 103.8343, title: '兰州' },
+        { lat: 36.0611, lng: 101.7782, title: '西宁' },
+        { lat: 26.0745, lng: 119.2965, title: '福州' },
+        { lat: 24.4486, lng: 118.0828, title: '鼓浪屿' },
+        { lat: 27.7566, lng: 117.6618, title: '武夷山' },
+        { lat: 22.2710, lng: 113.5767, title: '珠海' },
+        { lat: 37.8706, lng: 112.5489, title: '太原' },
+        { lat: 36.5853, lng: 109.4897, title: '延安' },
+        { lat: 30.7480, lng: 120.4853, title: '乌镇' },
         { lat: 23.1291, lng: 113.2644, title: '广州' },
         { lat: 34.3416, lng: 108.9398, title: '西安' },
-        { lat: 34.6937, lng: 135.5023, title:'大阪'},
-        { lat: 35.6895, lng: 139.6917, title: '东京'},
-        { lat: 35.1518, lng: 136.9066,title: '名古屋'},
-        { lat: 35.4437, lng: 139.6380,title: '横滨'}
-        { lat: 47.3769, lng: 8.5417, title: '苏黎世' },    
-        { lat: 40.4168, lng: -3.7038, title: '马德里' },  
-        { lat: 45.4642, lng: 9.1900, title: '米兰' },     
-        { lat: 45.4408, lng: 12.3155, title: '威尼斯' },  
-        { lat: 41.9028, lng: 12.4964, title: '罗马' },    
+        { lat: 34.6937, lng: 135.5023, title: '大阪' },
+        { lat: 35.6895, lng: 139.6917, title: '东京' },
+        { lat: 35.1518, lng: 136.9066, title: '名古屋' },
+        { lat: 35.4437, lng: 139.6380, title: '横滨' },
+        { lat: 47.3769, lng: 8.5417, title: '苏黎世' },
+        { lat: 40.4168, lng: -3.7038, title: '马德里' },
+        { lat: 45.4642, lng: 9.1900, title: '米兰' },
+        { lat: 45.4408, lng: 12.3155, title: '威尼斯' },
+        { lat: 41.9028, lng: 12.4964, title: '罗马' },
         { lat: 43.7696, lng: 11.2558, title: '佛罗伦萨' },
-        { lat: 43.7228, lng: 10.4017, title: '比萨' },    
-        { lat: 48.1351, lng: 11.5820, title: '慕尼黑' },  
-        { lat: 52.5200, lng: 13.4050, title: '柏林' },    
-        { lat: 50.8503, lng: 4.3517, title: '布鲁塞尔' }, 
+        { lat: 43.7228, lng: 10.4017, title: '比萨' },
+        { lat: 48.1351, lng: 11.5820, title: '慕尼黑' },
+        { lat: 52.5200, lng: 13.4050, title: '柏林' },
+        { lat: 50.8503, lng: 4.3517, title: '布鲁塞尔' },
         { lat: 52.3676, lng: 4.9041, title: '阿姆斯特丹' },
         { lat: 51.2277, lng: 6.7735, title: '杜塞尔多夫' },
-        { lat: 50.9375, lng: 6.9603, title: '科隆' },      
-        { lat: 50.7374, lng: 7.0982, title: '波恩' },     
+        { lat: 50.9375, lng: 6.9603, title: '科隆' },
+        { lat: 50.7374, lng: 7.0982, title: '波恩' },
       ];
 
       locations.forEach(location => {
@@ -88,7 +92,8 @@
       });
     }
 
-    
+
   </script>
 </body>
+
 </html>
