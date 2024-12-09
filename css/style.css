@@ -7,11 +7,13 @@ body {
 
 header {
   background-image: url("../image/IMG_5398.jpeg");
-  padding: 50px;
-  text-align: center;
-  background-image: url("../image/IMG_5398.jpeg") background-position: center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 200px;
+  width: 100%;
+  padding: 50px;
+  text-align: center;
 }
 
 /*#video{
@@ -44,6 +46,11 @@ header h1 {
   font-size: 3em;
   z-index: 10;
   padding-bottom: 20px;
+  color: white;
+}
+
+header p {
+  color: white;
 }
 
 nav {
